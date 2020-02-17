@@ -3,7 +3,9 @@
 
 $query = require 'core/bootstrap.php';
 
-$app['database']->addTodo($_POST['title'], 'todos');
+$app['database']->insert('users', [
+    'name' => $_POST['name']
+]);
 
 header("Location: /");
 exit;

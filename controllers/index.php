@@ -1,9 +1,7 @@
 <?php 
 
-require 'core/Task.php';
-
 $query = require 'core/bootstrap.php';
 
-$tasks = $app['database']->selectAll('todos', 'Task');
+$users = $app['database']->selectAll('users');
 
 require 'views/index.view.php';
