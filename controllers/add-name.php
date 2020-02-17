@@ -3,7 +3,7 @@
 
 $query = require 'core/bootstrap.php';
 
-$app['database']->insert('users', [
+App::get('database')->insert('users', [
     'name' => $_POST['name']
 ]);
 
