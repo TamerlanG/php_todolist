@@ -15,7 +15,7 @@
 
         extract($data);
 
-        return require "views/{$name}.view.php";
+        return require "app/views/{$name}.view.php";
     } 
 
     function redirect($path){
